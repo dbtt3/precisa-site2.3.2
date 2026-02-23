@@ -6,273 +6,520 @@
 <title>Precisa Sistematização & Tecnologia</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#F4F6FA;color:#333;line-height:1.6;}
-
-header{
-background:#fff;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:3px solid #243E8F;
-position:sticky;
-top:0;
-z-index:1000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.logo{height:60px;}
-
-nav a{
-color:#243E8F;
-text-decoration:none;
-margin-left:25px;
-font-weight:500;
-transition:.3s;
-}
-nav a:hover{color:#A32035;}
-
-.hero{
-background:linear-gradient(135deg,#1B2F6B,#243E8F);
-color:white;
-text-align:center;
-padding:120px 20px;
-}
-.hero h2{font-size:38px;margin-bottom:20px;}
-.hero p{max-width:750px;margin:0 auto 35px auto;opacity:.95;}
-
-.btn{
-background:white;
-color:#243E8F;
-padding:14px 28px;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
-margin:5px;
-display:inline-block;
-transition:.3s;
-}
-.btn:hover{background:#A32035;color:white;}
-
-.section{padding:80px 8%;text-align:center;}
-.section h2{font-size:30px;margin-bottom:40px;color:#243E8F;}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+body {
+    background: #F4F6FA;
+    color: #333;
 }
 
-.card{
-background:white;
-padding:30px;
-border-radius:12px;
-border-top:4px solid #243E8F;
-box-shadow:0 5px 15px rgba(0,0,0,.05);
-transition:.3s;
-}
-.card:hover{
-transform:translateY(-6px);
-border-top:4px solid #A32035;
-}
-.card i{font-size:40px;color:#243E8F;margin-bottom:15px;}
-.card h3{margin-bottom:15px;color:#1B2F6B;}
-
-.sobre-content{
-max-width:800px;
-margin:auto;
-text-align:left;
-}
-.sobre-content p{margin-bottom:20px;color:#555;}
-
-.founding-date{
-display:inline-block;
-background:#243E8F;
-color:white;
-padding:8px 20px;
-border-radius:40px;
-margin-bottom:20px;
+/* HEADER */
+header {
+    background: #ffffff;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #243E8F;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* PARCERIAS */
-.parcerias-section{background:white;}
-.parcerias-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:40px;
-margin-top:40px;
+.logo {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
 }
-.parceria-card{
-padding:40px;
-border-radius:14px;
-background:#F8FAFF;
-border-left:5px solid #243E8F;
-transition:.3s;
-text-align:left;
+
+nav a {
+    color: #243E8F;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
 }
-.parceria-card:hover{
-border-left:5px solid #A32035;
-transform:translateY(-5px);
+
+nav a:hover {
+    color: #A32035;
 }
-.parceria-card h3{color:#243E8F;margin-bottom:15px;}
-.parceria-card p{color:#555;}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #1B2F6B, #243E8F);
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 35px;
+    opacity: 0.95;
+}
+
+.btn {
+    background: #ffffff;
+    color: #243E8F;
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #A32035;
+    color: white;
+}
+
+/* SEÇÕES */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #243E8F;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 4px solid #243E8F;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-top: 4px solid #A32035;
+}
+
+.card i {
+    font-size: 40px;
+    color: #243E8F;
+    margin-bottom: 20px;
+}
+
+.card:hover i {
+    color: #A32035;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #1B2F6B;
+}
+
+/* SOBRE */
+.sobre-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.sobre-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.founding-date {
+    display: inline-block;
+    background: #243E8F;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 500;
+    margin: 20px 0;
+}
 
 /* CLIENTES */
-.clientes-section{background:#F4F6FA;}
-.clientes-lista{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:12px;
-margin-top:20px;
+.clientes-section {
+    background: white;
 }
-.cliente-item{
-background:white;
-padding:8px 16px;
-border-radius:30px;
-font-size:.85rem;
-box-shadow:0 3px 8px rgba(0,0,0,.05);
+
+.clientes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.cliente-item {
+    background: #F0F4FA;
+    color: #1B2F6B;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.cliente-item:hover {
+    background: #243E8F;
+    color: white;
+}
+
+/* PARCERIAS - NOVA SEÇÃO */
+.parcerias-section {
+    background: #f8faff;
+}
+
+.parcerias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.parceria-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid #eef2f6;
+    text-align: left;
+}
+
+.parceria-card h3 {
+    color: #243E8F;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.parceria-card i {
+    font-size: 36px;
+    color: #A32035;
+}
+
+.parceria-card ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.parceria-card li {
+    padding: 5px 0;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.parceria-card li:before {
+    content: "▹";
+    color: #A32035;
+    font-weight: bold;
 }
 
 /* CONTATO */
-.contact{
-background:#1B2F6B;
-color:white;
-text-align:center;
-padding:80px 8%;
-}
-.contact-item{
-margin:10px 0;
-}
-.contact i{color:#A32035;margin-right:8px;}
-
-footer{
-background:#243E8F;
-color:white;
-text-align:center;
-padding:30px;
-font-size:14px;
+.contact {
+    background: #1B2F6B;
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
 }
 
-@media(max-width:768px){
-header{flex-direction:column;text-align:center;}
-nav{margin-top:15px;}
-nav a{margin:0 10px;}
-.hero h2{font-size:26px;}
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin: 30px 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    color: #A32035;
+    font-size: 20px;
+}
+
+/* RODAPÉ */
+footer {
+    background: #243E8F;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #A32035;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+    
+    .section {
+        padding: 60px 5%;
+    }
 }
 </style>
 </head>
-
 <body>
 
 <header>
-<img src="logo.png" alt="Precisa" class="logo">
-<nav>
-<a href="#sobre">Sobre</a>
-<a href="#servicos">Serviços</a>
-<a href="#parcerias">Parcerias</a>
-<a href="#clientes">Clientes</a>
-<a href="#contato">Contato</a>
-</nav>
+    <!-- SUA LOGO AQUI - Coloque o arquivo na mesma pasta -->
+    <img src="logo.png" alt="Precisa Sistematização e Tecnologia" class="logo">
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#parcerias">Parcerias</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contato">Contato</a>
+    </nav>
 </header>
 
 <section class="hero">
-<h2>Inteligência em Dados, Governança e Transformação Digital</h2>
-<p>Especialistas em extração, estruturação e validação de dados com uso de Inteligência Artificial, Machine Learning e automação de processos.</p>
-<a href="#contato" class="btn">Fale Conosco</a>
-<a href="#servicos" class="btn">Conheça os Serviços</a>
+    <h2>Especialistas em Extração, Estruturação e Validação de Dados</h2>
+    <p>Organizamos informações, estruturamos dados e desenvolvemos soluções tecnológicas com inteligência artificial que tornam sua empresa mais eficiente, segura e preparada para o futuro.</p>
+    <a href="#contato" class="btn">Solicitar Contato</a>
 </section>
 
 <section id="sobre" class="section">
-<h2>Sobre a Empresa</h2>
-<div class="sobre-content">
-<span class="founding-date">Fundada em 1998 · Em MT desde 2004</span>
-<p>A <strong>Precisa Sistematização & Tecnologia</strong> é especialista em gerenciamento do conhecimento, dados e informações, desenvolvendo soluções com Inteligência Artificial e Machine Learning.</p>
-<p>Atuamos com qualidade e profissionalismo na consultoria e prestação de serviços, agregando eficiência, segurança e diferencial competitivo aos nossos clientes.</p>
-</div>
+    <h2>Sobre a Empresa</h2>
+    <div class="sobre-content">
+        <span class="founding-date">Fundada em 1998 · Em MT desde 2004</span>
+        <p>A <strong>Precisa Sistematização & Tecnologia</strong> é especialista na área de gerenciamento do conhecimento, dados e informações, focada no desenvolvimento de soluções tecnológicas com inteligência artificial e Machine Learning.</p>
+        
+        <p>Oferecemos soluções completas em gestão documental, digitalização e inteligência de dados, com foco em organização, eficiência e inovação. Nossas habilidades de gestão de dados permitem acessar e integrar dados independentemente do tipo de fonte.</p>
+        
+        <p>Atuamos com qualidade e profissionalismo em consultoria e prestação de serviços, agregando valores, agilidade e diferencial competitivo para nossos clientes.</p>
+    </div>
 </section>
 
 <section id="servicos" class="section">
-<h2>Serviços</h2>
-<div class="grid">
+    <h2>Serviços</h2>
 
-<div class="card">
-<i class="fas fa-brain"></i>
-<h3>Extração e Estruturação de Dados</h3>
-<p>Mineração de dados desestruturados com OCR e IA de alta precisão.</p>
-</div>
+    <div class="grid">
+        <div class="card">
+            <i class="fas fa-brain"></i>
+            <h3>Extração e Estruturação de Dados</h3>
+            <p>Mineração de dados desestruturados, OCR com IA de alta precisão para estruturação de informações.</p>
+        </div>
 
-<div class="card">
-<i class="fas fa-check-double"></i>
-<h3>Convalidação de Dados</h3>
-<p>Validação histórica funcional e prevenção de inconsistências.</p>
-</div>
+        <div class="card">
+            <i class="fas fa-check-double"></i>
+            <h3>Convalidação de Dados</h3>
+            <p>Validação completa do histórico funcional, detecção e prevenção de fraudes em folha de pagamento.</p>
+        </div>
 
-<div class="card">
-<i class="fas fa-folder-open"></i>
-<h3>Gestão Documental</h3>
-<p>Organização, classificação e padronização documental.</p>
-</div>
+        <div class="card">
+            <i class="fas fa-folder-open"></i>
+            <h3>Gestão Documental</h3>
+            <p>Organização, classificação e padronização de documentos físicos e digitais com tabela de temporalidade.</p>
+        </div>
 
-<div class="card">
-<i class="fas fa-code"></i>
-<h3>Soluções Tecnológicas</h3>
-<p>Implantação de sistemas e automação de processos.</p>
-</div>
+        <div class="card">
+            <i class="fas fa-scanner"></i>
+            <h3>Digitalização</h3>
+            <p>Transformação de documentos físicos em arquivos digitais organizados e indexados.</p>
+        </div>
 
-</div>
+        <div class="card">
+            <i class="fas fa-sitemap"></i>
+            <h3>Taxonomia Corporativa</h3>
+            <p>Estrutura de pastas, modelagem de atributos para GED e mapeamento de fluxos documentais.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>Soluções Tecnológicas</h3>
+            <p>Implantação de sistemas, automação de processos e desenvolvimento personalizado.</p>
+        </div>
+    </div>
 </section>
 
+<!-- NOVA SEÇÃO DE PARCERIAS -->
 <section id="parcerias" class="section parcerias-section">
-<h2>Parcerias Estratégicas</h2>
-<p style="max-width:700px;margin:0 auto 40px auto;">
-Inovação se constrói em rede. Nossas alianças ampliam nossa capacidade técnica e fortalecem nossas soluções.
-</p>
-
-<div class="parcerias-grid">
-<div class="parceria-card">
-<h3>Tecnologia & Inovação</h3>
-<p>Integrações com plataformas de gestão, soluções em nuvem e BI.</p>
-</div>
-
-<div class="parceria-card">
-<h3>Consultoria Especializada</h3>
-<p>Assessoria jurídica, capacitação técnica e conformidade normativa.</p>
-</div>
-
-<div class="parceria-card">
-<h3>Setor Público & Corporativo</h3>
-<p>Parcerias com órgãos de controle, tribunais e grandes empresas.</p>
-</div>
-</div>
+    <h2>Parcerias Estratégicas</h2>
+    <p style="margin-bottom: 40px;">Alianças que potencializam resultados e ampliam nossa capacidade de inovação.</p>
+    
+    <div class="parcerias-grid">
+        <div class="parceria-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Tecnologia & Inovação</h3>
+            <ul>
+                <li>Integração com softwares de gestão</li>
+                <li>Desenvolvimento conjunto de IA</li>
+                <li>Soluções em nuvem e Data Lake</li>
+                <li>Ferramentas de Business Intelligence</li>
+            </ul>
+        </div>
+        
+        <div class="parceria-card">
+            <i class="fas fa-handshake"></i>
+            <h3>Consultoria & Capacitação</h3>
+            <ul>
+                <li>Assessoria jurídica especializada</li>
+                <li>Parcerias com universidades</li>
+                <li>Treinamentos certificados</li>
+                <li>Normas e conformidade documental</li>
+            </ul>
+        </div>
+        
+        <div class="parceria-card">
+            <i class="fas fa-building"></i>
+            <h3>Setor Público & Privado</h3>
+            <ul>
+                <li>Convênios com Tribunais de Contas</li>
+                <li>Parcerias com Prefeituras</li>
+                <li>Empresas de médio e grande porte</li>
+                <li>Órgãos de controle</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
+<!-- SEÇÃO DE CLIENTES ATUALIZADA -->
 <section id="clientes" class="section clientes-section">
-<h2>Clientes que Confiam</h2>
-<div class="clientes-lista">
-<span class="cliente-item">Tribunal de Contas - MT</span>
-<span class="cliente-item">Tribunal de Justiça - MT</span>
-<span class="cliente-item">Prefeitura de Cuiabá</span>
-<span class="cliente-item">Unimed Cuiabá</span>
-<span class="cliente-item">Energisa</span>
-<span class="cliente-item">Grupo Sebival</span>
-</div>
+    <h2>Clientes que confiam</h2>
+    <p>Atendemos órgãos públicos e empresas de diversos segmentos.</p>
+    
+    <div style="margin-top: 40px;">
+        <h3 style="color: #243E8F; margin-bottom: 20px;">Poder Público</h3>
+        <div class="clientes-lista">
+            <span class="cliente-item">Tribunal de Contas - MT</span>
+            <span class="cliente-item">Tribunal de Contas - AL</span>
+            <span class="cliente-item">Tribunal de Justiça - MT</span>
+            <span class="cliente-item">Ministério Público - MT</span>
+            <span class="cliente-item">Procuradoria Geral - MT</span>
+            <span class="cliente-item">Assembleia Legislativa - MT</span>
+            <span class="cliente-item">Prefeitura de Cuiabá</span>
+            <span class="cliente-item">Prefeitura de Várzea Grande</span>
+            <span class="cliente-item">SEMA - MT</span>
+            <span class="cliente-item">MTPREV</span>
+            <span class="cliente-item">METAMAT</span>
+            <span class="cliente-item">Polícia Rodoviária Federal - MT</span>
+        </div>
+    </div>
+    
+    <div style="margin-top: 40px;">
+        <h3 style="color: #243E8F; margin-bottom: 20px;">Empresas e Instituições</h3>
+        <div class="clientes-lista">
+            <span class="cliente-item">Unimed Cuiabá</span>
+            <span class="cliente-item">Energisa</span>
+            <span class="cliente-item">Grupo Sebival</span>
+            <span class="cliente-item">OMEP Brasil</span>
+            <span class="cliente-item">Veros Tecnologia</span>
+            <span class="cliente-item">Tecnoeste</span>
+            <span class="cliente-item">Construtora Maksoud Rahe</span>
+            <span class="cliente-item">Uniselva</span>
+            <span class="cliente-item">AGGEMT</span>
+            <span class="cliente-item">Conselho Regional de Farmácia - MT</span>
+            <span class="cliente-item">Santa Casa Rondonópolis</span>
+        </div>
+    </div>
 </section>
 
 <section id="contato" class="contact">
-<h2>Contato</h2>
-<div class="contact-item"><i class="fas fa-envelope"></i>contato@precisa.com.br</div>
-<div class="contact-item"><i class="fas fa-phone"></i>(65) 98404-1892</div>
-<div class="contact-item"><i class="fab fa-whatsapp"></i>(65) 99982-2141</div>
+    <h2>Contato</h2>
+    <p>Estamos prontos para atender sua empresa. Entre em contato conosco!</p>
+    
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>contato@precisa.com.br</p>
+        </div>
+        
+        <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <p>(65) 98404-1892</p>
+        </div>
+        
+        <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <p>(65) 99982-2141</p>
+        </div>
+        
+        <div class="contact-item">
+            <i class="fas fa-globe"></i>
+            <p>www.precisasys.com.br</p>
+        </div>
+    </div>
+    
+    <a href="#" class="btn">Enviar Mensagem</a>
 </section>
 
 <footer>
-<img src="logo.png" style="height:40px;margin-bottom:10px;">
-<p>© 2026 Precisa Sistematização & Tecnologia</p>
-<p>Fundada em 1998 · Atuação em Mato Grosso desde 2004</p>
+    <div class="footer-content">
+        <img src="logo.png" alt="Precisa Sistematização e Tecnologia" style="height: 40px; margin-bottom: 15px;">
+        <p>© 2026 Precisa Sistematização & Tecnologia - Todos os direitos reservados.</p>
+        <p>Fundada em 1998 · Atuação em Mato Grosso desde 2004</p>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
 </footer>
 
 </body>
