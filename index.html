@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precisa Sistematização & Tecnologia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#F4F6FA;color:#333;line-height:1.6;}
+
+header{
+background:#fff;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:3px solid #243E8F;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{height:60px;}
+
+nav a{
+color:#243E8F;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+}
+nav a:hover{color:#A32035;}
+
+.hero{
+background:linear-gradient(135deg,#1B2F6B,#243E8F);
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+.hero h2{font-size:38px;margin-bottom:20px;}
+.hero p{max-width:750px;margin:0 auto 35px auto;opacity:.95;}
+
+.btn{
+background:white;
+color:#243E8F;
+padding:14px 28px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+margin:5px;
+display:inline-block;
+transition:.3s;
+}
+.btn:hover{background:#A32035;color:white;}
+
+.section{padding:80px 8%;text-align:center;}
+.section h2{font-size:30px;margin-bottom:40px;color:#243E8F;}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+border-top:4px solid #243E8F;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-6px);
+border-top:4px solid #A32035;
+}
+.card i{font-size:40px;color:#243E8F;margin-bottom:15px;}
+.card h3{margin-bottom:15px;color:#1B2F6B;}
+
+.sobre-content{
+max-width:800px;
+margin:auto;
+text-align:left;
+}
+.sobre-content p{margin-bottom:20px;color:#555;}
+
+.founding-date{
+display:inline-block;
+background:#243E8F;
+color:white;
+padding:8px 20px;
+border-radius:40px;
+margin-bottom:20px;
+}
+
+/* PARCERIAS */
+.parcerias-section{background:white;}
+.parcerias-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
+margin-top:40px;
+}
+.parceria-card{
+padding:40px;
+border-radius:14px;
+background:#F8FAFF;
+border-left:5px solid #243E8F;
+transition:.3s;
+text-align:left;
+}
+.parceria-card:hover{
+border-left:5px solid #A32035;
+transform:translateY(-5px);
+}
+.parceria-card h3{color:#243E8F;margin-bottom:15px;}
+.parceria-card p{color:#555;}
+
+/* CLIENTES */
+.clientes-section{background:#F4F6FA;}
+.clientes-lista{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+margin-top:20px;
+}
+.cliente-item{
+background:white;
+padding:8px 16px;
+border-radius:30px;
+font-size:.85rem;
+box-shadow:0 3px 8px rgba(0,0,0,.05);
+}
+
+/* CONTATO */
+.contact{
+background:#1B2F6B;
+color:white;
+text-align:center;
+padding:80px 8%;
+}
+.contact-item{
+margin:10px 0;
+}
+.contact i{color:#A32035;margin-right:8px;}
+
+footer{
+background:#243E8F;
+color:white;
+text-align:center;
+padding:30px;
+font-size:14px;
+}
+
+@media(max-width:768px){
+header{flex-direction:column;text-align:center;}
+nav{margin-top:15px;}
+nav a{margin:0 10px;}
+.hero h2{font-size:26px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.png" alt="Precisa" class="logo">
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#servicos">Serviços</a>
+<a href="#parcerias">Parcerias</a>
+<a href="#clientes">Clientes</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Inteligência em Dados, Governança e Transformação Digital</h2>
+<p>Especialistas em extração, estruturação e validação de dados com uso de Inteligência Artificial, Machine Learning e automação de processos.</p>
+<a href="#contato" class="btn">Fale Conosco</a>
+<a href="#servicos" class="btn">Conheça os Serviços</a>
+</section>
+
+<section id="sobre" class="section">
+<h2>Sobre a Empresa</h2>
+<div class="sobre-content">
+<span class="founding-date">Fundada em 1998 · Em MT desde 2004</span>
+<p>A <strong>Precisa Sistematização & Tecnologia</strong> é especialista em gerenciamento do conhecimento, dados e informações, desenvolvendo soluções com Inteligência Artificial e Machine Learning.</p>
+<p>Atuamos com qualidade e profissionalismo na consultoria e prestação de serviços, agregando eficiência, segurança e diferencial competitivo aos nossos clientes.</p>
+</div>
+</section>
+
+<section id="servicos" class="section">
+<h2>Serviços</h2>
+<div class="grid">
+
+<div class="card">
+<i class="fas fa-brain"></i>
+<h3>Extração e Estruturação de Dados</h3>
+<p>Mineração de dados desestruturados com OCR e IA de alta precisão.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-check-double"></i>
+<h3>Convalidação de Dados</h3>
+<p>Validação histórica funcional e prevenção de inconsistências.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-folder-open"></i>
+<h3>Gestão Documental</h3>
+<p>Organização, classificação e padronização documental.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-code"></i>
+<h3>Soluções Tecnológicas</h3>
+<p>Implantação de sistemas e automação de processos.</p>
+</div>
+
+</div>
+</section>
+
+<section id="parcerias" class="section parcerias-section">
+<h2>Parcerias Estratégicas</h2>
+<p style="max-width:700px;margin:0 auto 40px auto;">
+Inovação se constrói em rede. Nossas alianças ampliam nossa capacidade técnica e fortalecem nossas soluções.
+</p>
+
+<div class="parcerias-grid">
+<div class="parceria-card">
+<h3>Tecnologia & Inovação</h3>
+<p>Integrações com plataformas de gestão, soluções em nuvem e BI.</p>
+</div>
+
+<div class="parceria-card">
+<h3>Consultoria Especializada</h3>
+<p>Assessoria jurídica, capacitação técnica e conformidade normativa.</p>
+</div>
+
+<div class="parceria-card">
+<h3>Setor Público & Corporativo</h3>
+<p>Parcerias com órgãos de controle, tribunais e grandes empresas.</p>
+</div>
+</div>
+</section>
+
+<section id="clientes" class="section clientes-section">
+<h2>Clientes que Confiam</h2>
+<div class="clientes-lista">
+<span class="cliente-item">Tribunal de Contas - MT</span>
+<span class="cliente-item">Tribunal de Justiça - MT</span>
+<span class="cliente-item">Prefeitura de Cuiabá</span>
+<span class="cliente-item">Unimed Cuiabá</span>
+<span class="cliente-item">Energisa</span>
+<span class="cliente-item">Grupo Sebival</span>
+</div>
+</section>
+
+<section id="contato" class="contact">
+<h2>Contato</h2>
+<div class="contact-item"><i class="fas fa-envelope"></i>contato@precisa.com.br</div>
+<div class="contact-item"><i class="fas fa-phone"></i>(65) 98404-1892</div>
+<div class="contact-item"><i class="fab fa-whatsapp"></i>(65) 99982-2141</div>
+</section>
+
+<footer>
+<img src="logo.png" style="height:40px;margin-bottom:10px;">
+<p>© 2026 Precisa Sistematização & Tecnologia</p>
+<p>Fundada em 1998 · Atuação em Mato Grosso desde 2004</p>
+</footer>
+
+</body>
+</html>
